@@ -12,6 +12,7 @@
     "build": "father build",
     "build:watch": "father dev",
     "dev": "dumi dev",
+    "devPublish": "yalc publish",
     "docs:build": "dumi build",
     "doctor": "father doctor",
     "lint": "npm run lint:es && npm run lint:css",
@@ -42,6 +43,9 @@
       "eslint --fix",
       "prettier --parser=typescript --write"
     ]
+  },
+  "dependencies": {
+    "yalc": "^1.0.0-pre.53"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
