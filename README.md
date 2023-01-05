@@ -1,17 +1,8 @@
 # nova-ui
 
-[![NPM version](https://img.shields.io/npm/v/nova-ui.svg?style=flat)](https://npmjs.org/package/nova-ui)
-[![NPM downloads](http://img.shields.io/npm/dm/nova-ui.svg?style=flat)](https://npmjs.org/package/nova-ui)
+## 注意事项
 
-nova ui
-
-## Usage
-
-TODO
-
-## Options
-
-TODO
+node 版本需要在 14 以及以上
 
 ## Development
 
@@ -33,7 +24,14 @@ $ npm run docs:build
 
 # check your project for potential problems
 $ npm run doctor
+
+# 本地测试
+$ npm run devPublish
 ```
+
+## 补充文档
+
+[yalc](https://github.com/wclr/yalc)
 
 ## LICENSE
 

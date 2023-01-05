@@ -44,9 +44,6 @@
       "prettier --parser=typescript --write"
     ]
   },
-  "dependencies": {
-    "yalc": "^1.0.0-pre.53"
-  },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
@@ -61,7 +58,8 @@
     "prettier-plugin-packagejson": "^2.2.18",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "stylelint": "^14.9.1"
+    "stylelint": "^14.9.1",
+    "yalc": "^1.0.0-pre.53"
   },
   "peerDependencies": {
     "react": ">=16.9.0",
