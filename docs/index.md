@@ -3,10 +3,10 @@ hero:
   title: library
   description: nova ui
   actions:
-    - text: Hello
-      link: /
+    - text: 指南
+      link: /guide
     - text: World
-      link: /
+      link: /components/Foo
 features:
   - title: Hello
     emoji: 💎
