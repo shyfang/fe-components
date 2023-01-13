@@ -1,6 +1,10 @@
 MIT License
 
+<<<<<<< HEAD
 Copyright (c) 2023 Michelle
+=======
+Copyright (c) shaoyanfang
+>>>>>>> f18b10d (feat: init fe components)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
