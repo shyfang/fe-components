@@ -31,6 +31,3 @@ export default () => <Button>Hello world!;</Button>
 ```
 
 ## API
-| 参数                   | 说明                                          | 类型                    | 默认值   |
-| ---------------------- | --------------------------------------------- | ----------------------- | -------- |
-| selectType             | Select 的类型                                 | `request` \|\| `static` | request  |
