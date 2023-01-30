@@ -53,15 +53,14 @@ export default function (plop) {
         path: path.resolve(__dirname, './src/{{kebabCase name}}/demo/basic.tsx'),
         templateFile: path.resolve(__dirname, './templates/component/demo/basic.hbs'),
       },
-      {
-        type: 'add',
-        path: path.resolve(__dirname, './src/{{kebabCase name}}/__tests__/index.test.tsx'),
-        templateFile: path.resolve(__dirname, './templates/component/__tests__/index.test.hbs'),
-      },
+      // {
+      //   type: 'add',
+      //   path: path.resolve(__dirname, './src/{{kebabCase name}}/__tests__/index.test.tsx'),
+      //   templateFile: path.resolve(__dirname, './templates/component/__tests__/index.test.hbs'),
+      // },
       {
         type: 'append',
         path: path.resolve(__dirname, './src/index.ts'),
-        pattern: '/* PLOP_INJECT_EXPORT */',
         template: "export { default as {{pascalCase name}} } from './{{kebabCase name}}';",
       },
     ], // array of actions
