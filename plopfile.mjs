@@ -6,7 +6,6 @@ import { dirname } from 'path';
 export default function (plop) {
 	const __filename = fileURLToPath(import.meta.url);
 	const __dirname = dirname(__filename);
-	console.log('__dirname', __dirname);
   
   // create your generators here
   plop.setGenerator('src', {
@@ -20,7 +19,6 @@ export default function (plop) {
       { type: 'input', name: 'CN', message: '请输入组件中文名称' },
       { type: 'input', name: 'description', message: '请输入组件描述' },
       { type: 'input', name: 'group', message: '分组' },
-      { type: 'input', name: 'order', message: '排序' },
     ], // array of inquirer prompts
 		actions: [
       {
@@ -35,8 +33,13 @@ export default function (plop) {
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{kebabCase name}}/style.less'),
-        templateFile: path.resolve(__dirname, './templates/component/style.hbs'),
+        path: path.resolve(__dirname, './src/{{kebabCase name}}/style/index.less'),
+        templateFile: path.resolve(__dirname, './templates/component/style/style.hbs'),
+      },
+      {
+        type: 'add',
+        path: path.resolve(__dirname, './src/{{kebabCase name}}/style/index.ts'),
+        templateFile: path.resolve(__dirname, './templates/component/style/index.hbs'),
       },
       {
         type: 'add',

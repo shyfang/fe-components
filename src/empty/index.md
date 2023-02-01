@@ -1,17 +1,17 @@
 ---
-name: Demo 新组件模版
-route: /components/Demo
+name: Empty 空状态
+route: /components/empty
 menu: 组件
 toc: content
 group:
-  title: 基础组件
+  title: 数据展示
   order: 2
 ---
 
 
-## Demo 新组件模版
+## Empty 空状态
 
-Demo 介绍
+空状态时的展示展位图
 
 ### 何时使用
 何时使用 xxx

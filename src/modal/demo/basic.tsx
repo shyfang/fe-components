@@ -1,6 +1,6 @@
 import React from 'react';
-import { Demo } from 'nova-ui';
+import { Modal } from 'nova-ui';
 
 export default () => (
-<Demo />
+  <Modal />
 );

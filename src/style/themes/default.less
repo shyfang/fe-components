@@ -1,0 +1,139 @@
+// 技术方案：基于css vars 主题定制
+
+//【动态】主题色
+// 颜色: 品牌色、默认背景色、通用背景色、基本文本颜色、辅助文本颜色、链接色 
+
+//【定制】主题变量
+// 文本大小 字重 行高 间距
+// 圆角大小 边框（尺寸/颜色） 按钮尺寸以及指定组件的定制
+// 图片尺寸、圆角大小
+// 响应式: 断点
+// z-index 不同组件的z-index
+
+// primary
+@primary1: '#00796B';
+@primary2: '#8FE2B0';
+@primary3: '#8FE2B0';
+
+// secondary
+@positive1: #36AF66;
+@positive2: #E6F7EC;
+
+@accent1: #1E88E5;
+@accent2: #E3F2FD;
+
+@notice1: #F57C00;
+@notice2: #FFF3E0;
+
+@negative1: '#E57373';
+@negative2: '#FFEBEE';
+
+// Text
+@text1: #FFFFFF;
+@text2: #2A2D2F;
+@text3: #6E757C;
+@text4: #A1A6B7;
+
+
+// Background 
+@background1: #FCFCFD;
+@background1-1: #FCFCFD;
+@background2: #F4F5F6;
+@background2-1: #F4F5F6;
+@background3: #E6E9EC;
+@background3-1: #E6E9EC;
+@background3-2: #E6E9EC;
+@background4: #FFFFFF;
+@background4-1: #FFFFFF;
+@background5: #F8F8F9;
+@background5-1: #F8F8F9;
+@backgroundTooltip: #1E3246;
+
+
+
+// 栅格
+// com
+/* 断点 Maps*/
+@nova-prefix: nova;
+
+#breakpoints() {
+  xs: 360px;
+  sm: 600px;
+  md: 840px;
+  lg: 1024px
+}
+
+@nova-breakpoints-xs: 360px;
+@nova-breakpoints-sm: 600px;
+@nova-breakpoints-md: 840px;
+@nova-breakpoints-lg: 1024px;
+@nova-breakpoints-xlg: 1248px;
+
+/* 栅格间距 */
+@nova-gutter-width-xs: 16;
+@nova-gutter-width-sm: 16;
+@nova-gutter-width-md: 24;
+@nova-gutter-width-lg: 24;
+
+/* 栅格数 */
+@nova-columns-xs: 4;
+@nova-columns-sm: 8;
+@nova-columns-md: 12;
+@nova-columns-lg: 12;
+
+
+// Shadow Cards
+@shadow1: 0px 8px 16px -8px rgba(15, 15, 15, 0.2);
+@shadow2: 0px 24px 24px -16px rgba(15, 15, 15, 0.2);
+@shadow3: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+@shadow4: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+@shadow5: 0px 4px 16px -8px rgba(15, 15, 15, 0.1);
+@shadow6: 0px 16px 64px -48px rgba(31, 47, 70, 0.15);
+@shadowlg: 0px 8px 24px -6px rgba(0, 0, 0, 0.16), 0px 0px 1px rgba(0, 0, 0, 0.4);
+
+// radius
+@radiusxxs: 2px;
+@radiusxs: 4px;
+@radiussm: 8px;
+@radiusmd: 12px;
+@radiuslg: 16px;
+@radiusxl: 24px;
+@radiusRound: 50%;
+@radiusCircle: 50%;
+
+// Headings
+@fontSizeHeading1: 64px;
+@fontSizeHeading2: 48px;
+@fontSizeHeading3: 40px;
+@fontSizeHeading4: 32px;
+@fontSizeHeading5: 24px;
+
+// FontSize
+@fontSizeDefault: 14px;
+@fontSizeBody1: 20px;
+@fontSizeBody2: 18px;
+@fontSizeSM1: 16px;
+@fontSizeSM2: 14px;
+@fontSizeSM3: 12px;
+@fontSizeTiny: 10px; // @TODO: 10px字体生成
+
+@buttonFontSizeLG: 16px;
+@buttonFontSizeSM: 14px;
+@labelFontSize: 12px;
+
+
+// Line Height
+@lineHeightHeading1: 72px;
+@lineHeightHeading2: 56px;
+@lineHeightHeading3: 48px;
+@lineHeightHeading4: 40px;
+@lineHeightHeading5: 32px;
+
+@lineHeightBody1: 28px;
+@lineHeightBody2: 24px;
+@lineHeightSM1: 24px;
+@lineHeightSM2: 24px;
+@lineHeight3: 20px;
+@lineHeighteTiny: 16px;
+
+@buttonLineHeight: 16px;

@@ -5,10 +5,10 @@ const defaultProps = {
 
 };
 
-const Demo: React.FC<Props> = userProps => {
+const Empty: React.FC<Props> = userProps => {
   const props = { ...defaultProps, ...userProps };
 
-  return <div>Demo</div>;
+  return <div>Empty</div>;
   };
 
-  export default Demo;
+  export default Empty;

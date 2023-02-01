@@ -1,16 +1,17 @@
 ---
-name: {{pascalCase name}} {{CN}}
-route: /components/{{kebabCase name}}
+name: Modal 弹框
+route: /components/modal
 menu: 组件
 toc: content
 group:
-  title: {{group}}
+  title: 基础组件
+  order: 6
 ---
 
 
-## {{pascalCase name}} {{CN}}
+## Modal 弹框
 
-{{description}}
+弹框
 
 ### 何时使用
 何时使用 xxx

@@ -4,7 +4,7 @@ toc: content
 nav: 组件
 group:
   title: 布局组件
-  order: 2
+  order: 3
 ---
 
 # Foo
