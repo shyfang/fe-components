@@ -5,4 +5,7 @@ export default defineConfig({
   esm: {
     output: 'dist',
   },
+  extraBabelPlugins: [
+    ['import', { libraryName: 'antd', libraryDirectory: 'es', style: true }],
+  ],
 });

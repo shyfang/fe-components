@@ -67,6 +67,7 @@
     "stylelint": "^14.9.1"
   },
   "peerDependencies": {
+    "antd": "^4.22.1",
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
   },
