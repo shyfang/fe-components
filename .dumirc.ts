@@ -14,5 +14,16 @@ export default defineConfig({
       { title: '组件开发说明', link: '/guide' },
     ],
   },
+  extraBabelPlugins: [
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true,
+      },
+      'antd',
+    ],
+  ],
   mfsu: false,
 });
