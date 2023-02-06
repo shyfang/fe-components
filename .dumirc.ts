@@ -10,8 +10,9 @@ export default defineConfig({
     name: 'nova-ui',
     logo: '/logo.png',
     nav: [
+      { title: '安装使用', link: '/guide' },
       { title: '组件', link: '/components/button' },
-      { title: '组件开发说明', link: '/guide' },
+      { title: '组件开发说明', link: '/development' },
     ],
   },
   extraBabelPlugins: [
