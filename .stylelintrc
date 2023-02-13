@@ -1,3 +1,9 @@
 {
-  "extends": "@umijs/lint/dist/config/stylelint"
+  "extends": "@umijs/lint/dist/config/stylelint",
+  "rules": {
+    "no-empty-source": null,
+    "block-no-empty": null,
+    "comment-empty-line-before": null,
+    "comment-whitespace-inside": null
+  }
 }
