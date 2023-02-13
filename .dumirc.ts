@@ -16,11 +16,6 @@ export default defineConfig({
     ],
     footer: 'Powered by nova',
   },
-  apiParser: {},
-  resolve: {
-    // 配置入口文件路径，API 解析将从这里开始
-    entryFile: './src/index.ts',
-  },
   extraBabelPlugins: [
     [
       'babel-plugin-import',
