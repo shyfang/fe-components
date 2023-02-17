@@ -1,12 +1,11 @@
-import path from 'path';
+import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 
 // const FILT_PATH = 'src';
 export default function (plop) {
-	const __filename = fileURLToPath(import.meta.url);
-	const __dirname = dirname(__filename);
-  
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = dirname(__filename);
+
   // create your generators here
   plop.setGenerator('src', {
     description: 'this is a skeleton plopfile',
@@ -20,26 +19,44 @@ export default function (plop) {
       { type: 'input', name: 'description', message: '请输入组件描述' },
       { type: 'input', name: 'group', message: '分组' },
     ], // array of inquirer prompts
-		actions: [
+    actions: [
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{kebabCase name}}/index.ts'),
-        templateFile: path.resolve(__dirname, './templates/component/index.hbs'),
+        path: path.resolve(__dirname, './src/{{kebabCase name}}/index.tsx'),
+        templateFile: path.resolve(
+          __dirname,
+          './templates/component/index.hbs',
+        ),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{kebabCase name}}/{{kebabCase name}}.tsx'),
+        path: path.resolve(
+          __dirname,
+          './src/{{kebabCase name}}/{{kebabCase name}}.tsx',
+        ),
         templateFile: path.resolve(__dirname, './templates/component/comp.hbs'),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{kebabCase name}}/style/index.less'),
-        templateFile: path.resolve(__dirname, './templates/component/style/style.hbs'),
+        path: path.resolve(
+          __dirname,
+          './src/{{kebabCase name}}/style/index.less',
+        ),
+        templateFile: path.resolve(
+          __dirname,
+          './templates/component/style/style.hbs',
+        ),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{kebabCase name}}/style/index.ts'),
-        templateFile: path.resolve(__dirname, './templates/component/style/index.hbs'),
+        path: path.resolve(
+          __dirname,
+          './src/{{kebabCase name}}/style/index.ts',
+        ),
+        templateFile: path.resolve(
+          __dirname,
+          './templates/component/style/index.hbs',
+        ),
       },
       {
         type: 'add',
@@ -48,13 +65,22 @@ export default function (plop) {
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{kebabCase name}}/interface.ts'),
-        templateFile: path.resolve(__dirname, './templates/component/interface.hbs'),
+        path: path.resolve(__dirname, './src/{{kebabCase name}}/interface.tsx'),
+        templateFile: path.resolve(
+          __dirname,
+          './templates/component/interface.hbs',
+        ),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{kebabCase name}}/demo/basic.tsx'),
-        templateFile: path.resolve(__dirname, './templates/component/demo/basic.hbs'),
+        path: path.resolve(
+          __dirname,
+          './src/{{kebabCase name}}/demo/basic.tsx',
+        ),
+        templateFile: path.resolve(
+          __dirname,
+          './templates/component/demo/basic.hbs',
+        ),
       },
       // {
       //   type: 'add',
@@ -64,7 +90,8 @@ export default function (plop) {
       {
         type: 'append',
         path: path.resolve(__dirname, './src/index.ts'),
-        template: "export { default as {{pascalCase name}} } from './{{kebabCase name}}';",
+        template:
+          "export { default as {{pascalCase name}} } from './{{kebabCase name}}';",
       },
     ], // array of actions
   });
