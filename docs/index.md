@@ -5,8 +5,8 @@ hero:
   actions:
     - text: 指南
       link: /guide
-    - text: World
-      link: /components/Foo
+    - text: 组件
+      link: /components/Button
 features:
   - title: Hello
     emoji: 💎

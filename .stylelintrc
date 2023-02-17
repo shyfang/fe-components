@@ -4,6 +4,14 @@
     "no-empty-source": null,
     "block-no-empty": null,
     "comment-empty-line-before": null,
-    "comment-whitespace-inside": null
+    "comment-whitespace-inside": null,
+    "custom-property-empty-line-before": null,
+    "color-hex-length": null,
+    "custom-property-pattern": null,
+    "length-zero-no-unit": null,
+    "color-function-notation": null,
+    "alpha-value-notation": null
+
+
   }
 }
