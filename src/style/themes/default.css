@@ -104,4 +104,9 @@
   --nova-lineHeighteTiny: 16px;
 
   --nova-buttonLineHeight: 16px;
+
+  /* icon */
+  --nova-icon-sm: 16px;
+  --nova-icon-md: 24px;
+  --nova-icon-lg: 32px;
 }

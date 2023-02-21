@@ -1,24 +1,28 @@
 import classnames from 'classnames';
-import React from 'react';
-import { isBrowser, loadResource } from '../utils/dom';
+import React, { HTMLAttributes } from 'react';
+import createFromIconfont from './IconFont';
 import { Props } from './interface';
+import './style';
 
 const INNER_SVG_PROPS = {
   width: '1em',
   height: '1em',
   fill: 'currentColor',
-  viewBox: '0 0 32 32',
 };
 
-const Icon: React.ForwardRefExoticComponent<Props> & {
-  /**
-   * @description 加载iconfont.cn图标
-   */
-  loadFromIconfontCN?: (scriptUrl: string) => void;
-} = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
+export type IconProps = Props & HTMLAttributes<HTMLElement>;
+
+interface CompoundedComponent
+  extends React.ForwardRefExoticComponent<
+    IconProps & React.RefAttributes<HTMLElement>
+  > {
+  createFromIconfont: typeof createFromIconfont;
+}
+
+const Icon = React.forwardRef<HTMLElement, IconProps>((props, ref) => {
   const { type, size, prefixCls, className, ...rest } = props;
   const cls = classnames(prefixCls, className, {
-    [`${prefixCls}--${size}`]: !!size,
+    [`${prefixCls}-${size}`]: !!size,
   });
 
   const newProps = {
@@ -35,21 +39,17 @@ const Icon: React.ForwardRefExoticComponent<Props> & {
       </svg>
     </i>
   );
-});
+}) as CompoundedComponent;
 
 /**
  * 加载iconfont.cn图标
  *
  * @param {string} scriptUrl
  */
-Icon.loadFromIconfontCN = (scriptUrl: string): void => {
-  if (isBrowser) {
-    loadResource(scriptUrl);
-  }
-};
+Icon.createFromIconfont = createFromIconfont;
 
 // load icons
-Icon.loadFromIconfontCN('//at.alicdn.com/t/c/font_3901915_179rk4685l9.js');
+Icon.createFromIconfont('//at.alicdn.com/t/c/font_3901915_179rk4685l9.js');
 
 Icon.defaultProps = {
   prefixCls: 'nova-icon',

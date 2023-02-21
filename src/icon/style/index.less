@@ -1,3 +1,6 @@
+@import './mixins.less';
+@import '../style/index.less';
+
 .nova-icon {
   display: inline-block;
   font-style: normal;
@@ -7,4 +10,17 @@
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--nova-text2);
+}
+
+.nova-icon-sm {
+  .icon-size(var(--nova-icon-sm));
+}
+
+.nova-icon-md {
+  .icon-size(var(--nova-icon-md));
+}
+
+.nova-icon-lg {
+  .icon-size(var(--nova-icon-lg));
 }
