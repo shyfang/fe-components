@@ -11,21 +11,16 @@ export default function createFromIconfont(
   }
   const Iconfont = React.forwardRef<HTMLElement, IconProps>((props, ref) => {
     const { type } = props;
-    console.log(type);
 
     let content: ReactNode;
     if (type) {
       content = <use xlinkHref={`#${type}`} />;
     }
 
-    // fix https://github.com/ZhongAnTech/zarm/issues/835
-    // @ts-ignore
-    const I = Icon.default ? Icon.default : Icon;
-
     return (
-      <I {...props} ref={ref}>
+      <Icon {...props} ref={ref}>
         {content}
-      </I>
+      </Icon>
     );
   });
   return Iconfont;

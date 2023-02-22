@@ -20,7 +20,15 @@ interface CompoundedComponent
 }
 
 const Icon = React.forwardRef<HTMLElement, IconProps>((props, ref) => {
-  const { type, size, prefixCls, className, ...rest } = props;
+  const {
+    type,
+    size,
+    prefixCls,
+    className,
+    children,
+    component: SvgComponent,
+    ...rest
+  } = props;
   const cls = classnames(prefixCls, className, {
     [`${prefixCls}-${size}`]: !!size,
   });
@@ -31,6 +39,23 @@ const Icon = React.forwardRef<HTMLElement, IconProps>((props, ref) => {
     size,
     ...rest,
   };
+
+  // svg component > children by iconfont > type
+  if (SvgComponent) {
+    return (
+      <i {...newProps} ref={ref}>
+        <SvgComponent {...INNER_SVG_PROPS}>{children}</SvgComponent>
+      </i>
+    );
+  }
+
+  if (children) {
+    return (
+      <i {...newProps} ref={ref}>
+        <svg {...INNER_SVG_PROPS}>{children}</svg>
+      </i>
+    );
+  }
 
   return (
     <i {...newProps} ref={ref}>

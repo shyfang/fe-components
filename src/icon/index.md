@@ -26,7 +26,10 @@ group:
 详见 <a href="https://www.iconfont.cn/help/detail?spm=a313x.7781069.1998910419.d8d11a391&helptype=code" target="_blank">iconfont.cn 使用帮助</a> 查看如何生成 symbol 代码的 js 地址。
 
 <code src='./demo/iconfont.tsx'></code>
+<code src='./demo/svgcomponent.tsx'></code>
 
 ### API
 
-<API src="./icon.tsx"></API>
+| 属性 | 说明               | 类型   | 默认值 |
+| ---- | ------------------ | ------ | ------ |
+| size | 组件大小[sm/md/lg] | string | md     |
