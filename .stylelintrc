@@ -10,8 +10,8 @@
     "custom-property-pattern": null,
     "length-zero-no-unit": null,
     "color-function-notation": null,
-    "alpha-value-notation": null
-
+    "alpha-value-notation": null,
+    "function-no-unknown": null
 
   }
 }

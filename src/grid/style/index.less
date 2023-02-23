@@ -1,0 +1,144 @@
+@row-prefix-cls: 'nova-row';
+@col-prefix-cls: 'nova-col';
+
+.nova-grid-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  .@{row-prefix-cls} {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+
+.@{row-prefix-cls} {
+  display: flex;
+  flex-flow: row wrap;
+
+  // No wrap of flex
+  &-no-wrap {
+    flex-wrap: nowrap;
+  }
+}
+
+// x轴原点
+.@{row-prefix-cls}-justify-start {
+  justify-content: flex-start;
+}
+
+// x轴居中
+.@{row-prefix-cls}-justify-center {
+  justify-content: center;
+}
+
+// x轴反方向
+.@{row-prefix-cls}-justify-end {
+  justify-content: flex-end;
+}
+
+// x轴平分
+.@{row-prefix-cls}-justify-space-between {
+  &:extend(.@{row-prefix-cls});
+
+  justify-content: space-between;
+}
+
+// x轴有间隔地平分
+.@{row-prefix-cls}-justify-space-arount {
+  &:extend(.@{row-prefix-cls});
+
+  justify-content: space-around;
+}
+
+// 顶部对齐
+.@{row-prefix-cls}-align-top {
+  align-items: flex-start;
+}
+
+// 居中对齐
+.@{row-prefix-cls}-align-middle {
+  align-items: center;
+}
+
+// 底部对齐
+.@{row-prefix-cls}-align-bottom {
+  align-items: flex-end;
+}
+
+// grid
+.generate-columns(@screen-size, @columns, @gutter-width) {
+  .col-offset(@index) {
+    .@{col-prefix-cls}-offset-@{index} {
+      margin-left: percentage((@index / @columns));
+    }
+    .@{col-prefix-cls}-@{screen-size}-offset-@{index} {
+      margin-left: percentage((@index / @columns));
+    }
+  }
+
+  .col-order(@index) {
+    .@{col-prefix-cls}-order-@{index} {
+      order: @index;
+    }
+    .@{col-prefix-cls}-@{screen-size}-order-@{index} {
+      order: @index;
+    }
+  }
+
+  .col(@index) when (@index > @columns) {
+    .@{col-prefix-cls}-@{index} {
+      flex: none;
+      flex-basis: 100%;
+      width: 100%;
+      padding-left: (@gutter-width / 2) * 1px;
+      padding-right: (@gutter-width / 2) * 1px;
+    }
+    .col-offset(@index);
+    .col-order(@index);
+  }
+
+  .col(@index) when (@index <= @columns) {
+    .@{col-prefix-cls}-@{index},
+    .@{col-prefix-cls}-@{screen-size}-@{index} {
+      flex: none;
+      flex-basis: percentage((@index / @columns));
+      width: percentage((@index / @columns));
+      padding-left: (@gutter-width / 2) * 1px;
+      padding-right: (@gutter-width / 2) * 1px;
+    }
+    .col-offset(@index);
+  }
+
+  .loop-columns(@index: 1) when (@index =< 12) {
+    .col(@index);
+    .loop-columns(@index + 1);
+  }
+
+  .loop-columns();
+}
+
+.generate-columns(xs, 4, 16);
+
+@media (min-width: 600px) {
+  .generate-columns(sm, 8, 16);
+}
+
+@media (min-width: 840px) {
+  .nova-grid-container {
+    padding-left: 24px;
+    padding-right: 24px;
+    .@{row-prefix-cls} {
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+  }
+
+  .generate-columns(md, 12, 24);
+}
+
+@media (min-width: 1248px) {
+  .nova-grid-container {
+    width: 1248px;
+    max-width: 1248px;
+    margin: 0 auto;
+  }
+}
