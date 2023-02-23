@@ -1,18 +1,16 @@
-@row-prefix-cls: 'nova-row';
-@col-prefix-cls: 'nova-col';
+@row-prefix-cls: ~'nova-row';
+@col-prefix-cls: ~'nova-col';
 
 .nova-grid-container {
   padding-left: 16px;
   padding-right: 16px;
-  .@{row-prefix-cls} {
-    margin-left: -8px;
-    margin-right: -8px;
-  }
 }
 
 .@{row-prefix-cls} {
   display: flex;
   flex-flow: row wrap;
+  margin-left: -8px;
+  margin-right: -8px;
 
   // No wrap of flex
   &-no-wrap {
@@ -37,15 +35,11 @@
 
 // x轴平分
 .@{row-prefix-cls}-justify-space-between {
-  &:extend(.@{row-prefix-cls});
-
   justify-content: space-between;
 }
 
 // x轴有间隔地平分
-.@{row-prefix-cls}-justify-space-arount {
-  &:extend(.@{row-prefix-cls});
-
+.@{row-prefix-cls}-justify-space-around {
   justify-content: space-around;
 }
 
@@ -106,6 +100,7 @@
       padding-right: (@gutter-width / 2) * 1px;
     }
     .col-offset(@index);
+    .col-order(@index);
   }
 
   .loop-columns(@index: 1) when (@index =< 12) {
@@ -126,19 +121,19 @@
   .nova-grid-container {
     padding-left: 24px;
     padding-right: 24px;
-    .@{row-prefix-cls} {
-      margin-left: -12px;
-      margin-right: -12px;
-    }
+  }
+  .@{row-prefix-cls} {
+    margin-left: -12px;
+    margin-right: -12px;
   }
 
   .generate-columns(md, 12, 24);
 }
 
-@media (min-width: 1248px) {
-  .nova-grid-container {
-    width: 1248px;
-    max-width: 1248px;
-    margin: 0 auto;
-  }
-}
+// @media (min-width: 1248px) {
+//   .nova-grid-container {
+//     width: 1248px;
+//     max-width: 1248px;
+//     margin: 0 auto;
+//   }
+// }

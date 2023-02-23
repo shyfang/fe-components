@@ -1,3 +1,7 @@
+/**
+ * title: 垂直布局 align
+ * description: middle
+ */
 import { Col, Row } from 'nova-ui';
 import React from 'react';
 
@@ -7,7 +11,10 @@ export default () => (
       <div
         style={{
           background: 'var(--nova-primary1)',
-          textAlign: 'center',
+          height: 100,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
         col-2/xs-4

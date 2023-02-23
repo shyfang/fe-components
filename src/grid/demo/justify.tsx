@@ -7,20 +7,23 @@ export default () => (
       <div
         style={{
           background: 'var(--nova-primary1)',
-          textAlign: 'center',
+          height: 100,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
         col-2/xs-4
       </div>
     </Col>
-    <Col span={4} xs={{ span: 4 }}>
+    <Col span={2} xs={{ span: 4 }}>
       <div style={{ background: 'var(--nova-primary1)', textAlign: 'center' }}>
-        col-4/xs-4
+        col-2/xs-4
       </div>
     </Col>
-    <Col span={6} xs={4}>
+    <Col span={2} xs={4}>
       <div style={{ background: 'var(--nova-primary1)', textAlign: 'center' }}>
-        col-6/xs-4
+        col-2/xs-4
       </div>
     </Col>
   </Row>

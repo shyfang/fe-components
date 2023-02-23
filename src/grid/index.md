@@ -5,6 +5,7 @@ menu: 组件
 toc: content
 group:
   title: 布局组件
+  order: 1
 ---
 
 ## Grid 栅格
@@ -23,7 +24,11 @@ nova 12 栅格
 
 #### 基本使用
 
+<code src='./demo/grid-container.tsx'></code>
 <code src='./demo/basic.tsx'></code>
+
+<code src='./demo/align.tsx'></code>
+<code src='./demo/justify.tsx'></code>
 
 ### API
 
