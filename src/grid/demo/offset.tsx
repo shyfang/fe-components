@@ -1,6 +1,6 @@
 /**
- * title: 基础栅格
- * description: 使用单一的一组 Row 和 Col 栅格组件，就可以创建一个基本的栅格系统，所有列（Col）必须放在 Row 内。
+ * title: 左右偏移
+ * description: 列偏移。使用 offset 可以将列向右侧偏。例如，offset={4} 将元素向右侧偏移了 4 个列（column）的宽度。
  */
 import { Col, Row } from 'nova-ui';
 import React from 'react';
@@ -20,10 +20,10 @@ export default () => (
     <Col span={2}>
       <DemoBox>col-2</DemoBox>
     </Col>
-    <Col span={4}>
+    <Col span={3} offset={1}>
       <DemoBox>col-4</DemoBox>
     </Col>
-    <Col span={6}>
+    <Col span={4} offset={2}>
       <DemoBox>col-6</DemoBox>
     </Col>
   </Row>

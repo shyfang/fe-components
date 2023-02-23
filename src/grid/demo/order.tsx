@@ -17,14 +17,14 @@ const DemoBox: React.FC<{ children: React.ReactNode }> = (props) => (
 );
 export default () => (
   <Row justify="space-between" align="middle" style={{ background: '#ddf8f8' }}>
-    <Col span={2}>
-      <DemoBox>col-2</DemoBox>
+    <Col span={2} order={2}>
+      <DemoBox>col-order-3</DemoBox>
     </Col>
-    <Col span={4}>
-      <DemoBox>col-4</DemoBox>
+    <Col span={4} order={1}>
+      <DemoBox>col-order-2</DemoBox>
     </Col>
-    <Col span={6}>
-      <DemoBox>col-6</DemoBox>
+    <Col span={6} order={0}>
+      <DemoBox>col-order-1</DemoBox>
     </Col>
   </Row>
 );

@@ -1,12 +1,22 @@
 import React, { FC, ReactNode } from 'react';
+import './style';
 
 export interface GridContainerProps
   extends React.HTMLAttributes<HTMLDivElement> {
   children?: ReactNode;
+  className?: string;
 }
 
-const GridContainer: FC<GridContainerProps> = ({ children }) => {
-  return <div className="nova-grid-container">{children}</div>;
+const GridContainer: FC<GridContainerProps> = ({
+  children,
+  className,
+  ...others
+}) => {
+  return (
+    <div {...others} className={`nova-grid-container ${className}`}>
+      {children}
+    </div>
+  );
 };
 
 GridContainer.defaultProps = {};
