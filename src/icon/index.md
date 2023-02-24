@@ -5,6 +5,7 @@ menu: 组件
 toc: content
 group:
   title: 基础组件
+  order: 1
 ---
 
 ## Icon 图标

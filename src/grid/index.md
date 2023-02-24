@@ -5,7 +5,7 @@ menu: 组件
 toc: content
 group:
   title: 布局组件
-  order: 1
+  order: 2
 ---
 
 ## Grid 栅格
