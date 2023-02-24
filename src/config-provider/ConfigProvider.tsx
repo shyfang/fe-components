@@ -1,5 +1,4 @@
-import LocaleReceiver from 'nova-ui/locale';
-import LocaleContext from 'nova-ui/locale/context';
+import { LocaleContext, LocaleReceiver } from 'nova-ui';
 import React from 'react';
 import { ConfigConsumer, ConfigContext } from './context';
 import { registerTheme } from './cssVariables';

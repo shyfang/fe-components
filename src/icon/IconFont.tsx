@@ -1,5 +1,5 @@
-import { isBrowser, loadResource } from 'nova-ui/utils/dom';
 import React, { FunctionComponent, ReactNode } from 'react';
+import { isBrowser, loadResource } from '../utils';
 import { IconProps } from './icon';
 import Icon from './index';
 

@@ -1,5 +1,5 @@
+import type { IconProps } from 'nova-ui';
 import { Icon } from 'nova-ui';
-import type { IconProps } from 'nova-ui/icon';
 import * as React from 'react';
 
 const SvgSearch = (props: IconProps, svgRef?: React.Ref<SVGSVGElement>) => {
