@@ -11,14 +11,16 @@
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
+    "create": "node lib/generateTpl",
     "dev": "dumi dev",
+    "devPublish": "yalc publish",
     "docs:build": "dumi build",
     "doctor": "father doctor",
     "lint": "npm run lint:es && npm run lint:css",
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "new": "plop --plopfile ./plopfile.mjs",
-    "prepare": "husky install && dumi setup",
+    "prepare": "git commit -a  && git push && husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
     "start": "npm run dev"
   },
@@ -35,7 +37,7 @@
       "stylelint --fix",
       "prettier --write"
     ],
-    "*.{js,jsx}": [
+    "*.{js,jsx,mjs}": [
       "eslint --fix",
       "prettier --write"
     ],
@@ -46,6 +48,7 @@
   },
   "dependencies": {
     "antd": "^4.22.1",
+    "classnames": "^2.3.2",
     "rc-util": "^5.27.2"
   },
   "devDependencies": {
@@ -54,6 +57,7 @@
     "@umijs/lint": "^4.0.0",
     "babel-plugin-import": "^1.13.6",
     "dumi": "^2.0.2",
+    "ejs": "^3.1.8",
     "eslint": "^8.23.0",
     "father": "^4.1.0",
     "husky": "^8.0.1",
@@ -64,10 +68,11 @@
     "prettier-plugin-packagejson": "^2.2.18",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "stylelint": "^14.9.1"
+    "stylelint": "^14.9.1",
+    "yalc": "^1.0.0-pre.53"
   },
   "peerDependencies": {
-    "antd": "^4.22.1",
+    "antd": ">=4.22.1",
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
   },
