@@ -1,7 +1,7 @@
 {
-  "name": "nova-ui",
+  "name": "novadax-components",
   "version": "0.0.1",
-  "description": "fe-components",
+  "description": "novadax-components",
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
