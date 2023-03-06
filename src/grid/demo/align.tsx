@@ -2,7 +2,7 @@
  * title: 排序
  * description: 通过 order 来改变元素的排序。
  */
-import { Col, Row } from 'nova-ui';
+import { Col, Row } from 'novadax-components';
 import React from 'react';
 
 const DemoBox: React.FC<{ children: React.ReactNode; value: number }> = (

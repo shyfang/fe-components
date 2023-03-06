@@ -12,7 +12,7 @@ group:
 This is an example component.
 
 ```jsx
-import { Foo } from 'nova-ui';
+import { Foo } from 'novadax-components';
 
 export default () => <Foo title="Hello dumi!" />;
 ```

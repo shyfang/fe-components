@@ -8,8 +8,8 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "nova-ui": ["src"],
-      "nova-ui/*": ["src/*", "*"]
+      "novadax-components": ["src"],
+      "novadax-components/*": ["src/*", "*"]
     }
   },
   "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]

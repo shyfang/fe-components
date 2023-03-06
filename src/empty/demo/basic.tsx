@@ -1,6 +1,4 @@
+import { Empty } from 'novadax-components';
 import React from 'react';
-import { Empty } from 'nova-ui';
 
-export default () => (
-  <Empty />
-);
+export default () => <Empty />;

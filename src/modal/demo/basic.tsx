@@ -1,6 +1,4 @@
+import { Modal } from 'novadax-components';
 import React from 'react';
-import { Modal } from 'nova-ui';
 
-export default () => (
-  <Modal />
-);
+export default () => <Modal />;

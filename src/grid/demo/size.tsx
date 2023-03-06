@@ -2,7 +2,7 @@
  * title: 响应式
  * description: xs sm md,三种布局分别对应phone pad pc
  */
-import { Col, Row } from 'nova-ui';
+import { Col, Row } from 'novadax-components';
 import React from 'react';
 
 const DemoBox: React.FC<{ children: React.ReactNode; value: number }> = (

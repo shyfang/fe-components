@@ -31,7 +31,7 @@ Button 介绍
  * description: demo 描述
  */
 import React from 'react';
-import { Button } from 'nova-ui';
+import { Button } from 'novadax-components';
 export default () => <Button>Hello world!;</Button>;
 ```
 

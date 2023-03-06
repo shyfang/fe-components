@@ -1,4 +1,4 @@
-import { LocaleReceiver } from 'nova-ui';
+import { LocaleReceiver } from 'novadax-components';
 import React from 'react';
 import { Props } from './interface';
 import './style';

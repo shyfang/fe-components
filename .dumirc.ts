@@ -2,12 +2,12 @@ import { defineConfig } from 'dumi';
 
 // https://d.umijs.org/config
 export default defineConfig({
-  title: 'NOVA-UI',
+  title: 'novadax-components',
   // favicons: '',
   outputPath: 'docs-dist',
   hash: true,
   themeConfig: {
-    name: 'nova-ui',
+    name: 'novadax-components',
     logo: '/favicon.ico',
     nav: [
       { title: '安装使用', link: '/guide' },

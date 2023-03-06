@@ -1,4 +1,4 @@
-import { Button, ConfigProvider, Modal } from 'nova-ui';
+import { Button, ConfigProvider, Modal } from 'novadax-components';
 import React, { useState } from 'react';
 import enUS from '../../locale/locales/en_US';
 import zhCN from '../../locale/locales/zh_CN';

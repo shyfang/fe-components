@@ -2,7 +2,7 @@
  * title: 布局
  * description: 子元素根据不同的值 start、center、end、space-between、space-around 和 space-evenly，分别定义其在父节点里面的排版方式。
  */
-import { Col, Row } from 'nova-ui';
+import { Col, Row } from 'novadax-components';
 import React from 'react';
 
 const DemoBox: React.FC<{ children: React.ReactNode }> = (props) => (

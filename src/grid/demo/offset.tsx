@@ -2,7 +2,7 @@
  * title: 左右偏移
  * description: 列偏移。使用 offset 可以将列向右侧偏。例如，offset={4} 将元素向右侧偏移了 4 个列（column）的宽度。
  */
-import { Col, Row } from 'nova-ui';
+import { Col, Row } from 'novadax-components';
 import React from 'react';
 
 const DemoBox: React.FC<{ children: React.ReactNode }> = (props) => (

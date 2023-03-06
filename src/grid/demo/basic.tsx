@@ -2,7 +2,7 @@
  * title: 基础栅格
  * description: 使用单一的一组 Row 和 Col 栅格组件，就可以创建一个基本的栅格系统，所有列（Col）必须放在 Row 内。
  */
-import { Col, Row } from 'nova-ui';
+import { Col, Row } from 'novadax-components';
 import React from 'react';
 
 const DemoBox: React.FC<{ children: React.ReactNode }> = (props) => (

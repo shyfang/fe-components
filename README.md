@@ -1,4 +1,4 @@
-# nova-ui
+# novadax-components
 
 ## 注意事项
 

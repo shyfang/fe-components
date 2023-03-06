@@ -2,7 +2,7 @@
  * title: GridContainer
  * description: 一般页面使用（或者块使用），GridContainer放在外层，所有列（Col）必须放在 Row 内。
  */
-import { Col, GridContainer, Row } from 'nova-ui';
+import { Col, GridContainer, Row } from 'novadax-components';
 import React from 'react';
 
 const DemoBox: React.FC<{ children: React.ReactNode }> = (props) => (

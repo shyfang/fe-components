@@ -1,4 +1,4 @@
-import { Icon } from 'nova-ui';
+import { Icon } from 'novadax-components';
 import React from 'react';
 
 export default () => (

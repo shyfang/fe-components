@@ -1,7 +1,7 @@
 ---
 hero:
   title: library
-  description: nova-ui-components
+  description: novadax-components-components
   actions:
     - text: 指南
       link: /guide
@@ -19,4 +19,4 @@ features:
     description: Put ! description here
 ---
 
-<!-- nova-ui -->
+<!-- novadax-components -->
