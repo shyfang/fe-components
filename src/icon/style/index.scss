@@ -1,5 +1,5 @@
-@import './mixins.less';
-@import '../style/index.less';
+@import './mixins.scss';
+// @import '../style/index.scss';
 
 .nova-icon {
   display: inline-block;
@@ -14,13 +14,13 @@
 }
 
 .nova-icon-sm {
-  .icon-size(var(--nova-icon-sm));
+  @include icon-size(var(--nova-icon-sm));
 }
 
 .nova-icon-md {
-  .icon-size(var(--nova-icon-md));
+  @include icon-size(var(--nova-icon-md));
 }
 
 .nova-icon-lg {
-  .icon-size(var(--nova-icon-lg));
+  @include icon-size(var(--nova-icon-lg));
 }

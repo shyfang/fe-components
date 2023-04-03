@@ -40,7 +40,7 @@ export default function (plop) {
         type: 'add',
         path: path.resolve(
           __dirname,
-          './src/{{kebabCase name}}/style/index.less',
+          './src/{{kebabCase name}}/style/index.scss',
         ),
         templateFile: path.resolve(
           __dirname,
