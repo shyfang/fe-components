@@ -20,8 +20,8 @@
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "new": "plop --plopfile ./plopfile.mjs",
-    "prepare": "git commit -a  && git push && husky install && dumi setup",
-    "prepublishOnly": "father doctor && npm run build",
+    "pre-pare": "git commit -a  && git push && husky install && dumi setup",
+    "pre-publishOnly": "father doctor && npm run build",
     "start": "npm run dev"
   },
   "commitlint": {

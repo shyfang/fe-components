@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React, { FC, ReactNode } from 'react';
-import './style';
+// import './style';
 
 type ColSpanType = number | string;
 export interface ColSize {

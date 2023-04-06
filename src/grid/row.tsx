@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React, { FC, ReactNode } from 'react';
-import './style';
+// import './style';
 export interface RowProps extends React.HTMLAttributes<HTMLDivElement> {
   prefixCls?: string;
   className?: string;

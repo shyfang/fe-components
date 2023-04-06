@@ -1,7 +1,7 @@
 import { LocaleReceiver } from 'novadax-components';
 import React from 'react';
 import { Props } from './interface';
-import './style';
+// import './style';
 const defaultProps = {};
 
 const Modal: React.FC<Props> = (userProps) => {

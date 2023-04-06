@@ -1,3 +1,4 @@
+import './style/index.scss';
 /** 1.基础组件 */
 /** 5.待开发 */
 export { default as Button } from './Button';

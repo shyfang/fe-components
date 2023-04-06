@@ -2,7 +2,7 @@ import classnames from 'classnames';
 import React, { HTMLAttributes } from 'react';
 import createFromIconfont from './IconFont';
 import { Props } from './interface';
-import './style';
+// import './style';
 
 const INNER_SVG_PROPS = {
   width: '1em',

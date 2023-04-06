@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react';
-import './style';
+// import './style';
 
 export interface GridContainerProps
   extends React.HTMLAttributes<HTMLDivElement> {

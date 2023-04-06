@@ -6,7 +6,7 @@ export default defineConfig({
     output: 'dist',
     ignores: ['src/**/demo/**'],
   },
-  extraBabelPlugins: [
-    ['import', { libraryName: 'antd', libraryDirectory: 'es', style: true }],
-  ],
+  // extraBabelPlugins: [
+  //   ['import', { libraryName: 'antd', libraryDirectory: 'es', style: "css" }],
+  // ],
 });
