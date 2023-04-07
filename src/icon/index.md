@@ -31,6 +31,9 @@ group:
 
 ### API
 
-| 属性 | 说明               | 类型   | 默认值 |
-| ---- | ------------------ | ------ | ------ |
-| size | 组件大小[sm/md/lg] | string | md     |
+| 属性      | 说明               | 类型    | 默认值 |
+| --------- | ------------------ | ------- | ------ |
+| type      | icon 名称          | string  |        |
+| size      | 组件大小[sm/md/lg] | string  | md     |
+| className | class 类名         | string  |        |
+| component | svgcomponent       | Element |        |

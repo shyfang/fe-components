@@ -5,5 +5,5 @@
 import { Button } from 'novadax-components';
 import React from 'react';
 
-const App: React.FC = () => <Button type="primary">Primary Button</Button>;
+const App: React.FC = () => <Button>Primary Button</Button>;
 export default App;

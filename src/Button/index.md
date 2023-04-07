@@ -4,7 +4,7 @@ subtitle: 按钮
 toc: content
 nav: 组件
 group:
-  title: 待开发
+  title: 基础组件
 ---
 
 # Button
