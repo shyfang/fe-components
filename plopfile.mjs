@@ -93,6 +93,11 @@ export default function (plop) {
         template:
           "export { default as {{pascalCase name}} } from './{{kebabCase name}}';",
       },
+      {
+        type: 'append',
+        path: path.resolve(__dirname, './src/style/components.scss'),
+        template: "@import '../{{kebabCase name}}/style/index.scss';",
+      },
     ], // array of actions
   });
 }
